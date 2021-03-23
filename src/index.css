@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+:root {
+    --primary: #efb6b2;
+    --secondary: #4e4e4e;
+    --error: #ff4a4a;
+}
+
+
+/* base styles & title */
+
+body {
+    font-family: "Noto Serif";
+    color: var(--secondary);
+}
+
+.App {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("./img//bg.jpeg");
+    background-size: cover;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/* upload form styles */
+
+form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.btn-upload {
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    color: transparent;
+    background: #ff4a4a;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    margin: 20px auto;
+    outline: none;
+}
+
+.btn-upload:hover {
+    border: 1px solid #ff4a4a;
+    background: #fff;
+    color: #ff4a4a;
+}
+
+
+/* progress bar styles */
+
+.progress-bar {
+    height: 5px;
+    background: var(--primary);
+    margin-top: 20px;
+}
+
+
+/* image grid styles */
+
+.img-grid {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.img-wrap {
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* modal styles */
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop img {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, .5);
+    border: 3px solid #fff;
+}
